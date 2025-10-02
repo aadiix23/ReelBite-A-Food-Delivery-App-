@@ -11,7 +11,7 @@ app.get("/",(req,res)=>{
     res.send("Hello"); 
 })
 app.use('/api/auth',authRoutes);
-app.use('/api/auth',foodRoutes);
+app.use('/api/auth/food', foodRoutes);
 
 
 module.exports=app;
